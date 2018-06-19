@@ -1,0 +1,20 @@
+{
+  "name": "less-template",
+  "version": "1.0.0",
+  "description": "Basic LESS project template for NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "less": "lessc less/style.less public/css/style.css",
+    "less:watch": "less-watch-compiler less public/css",
+    "server": "live-server public",
+    "start": "npm-run-all -p less:watch server"
+  },
+  "author": "Duncan Snider",
+  "license": "ISC",
+  "dependencies": {
+    "less": "^3.0.4",
+    "less-watch-compiler": "^1.11.3",
+    "live-server": "^1.2.0",
+    "npm-run-all": "^4.1.3"
+  }
+}
